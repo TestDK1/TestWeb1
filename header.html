@@ -1,0 +1,61 @@
+
+<header class="main_menu home_menu header2" id="scrollNav" style="top:0px; height: max-content">
+    <a class="a2" href="index.html"><img src="css/images/logo.png" alt="logo" class="imgNavLogo"> </a>
+    <nav class="nav2" style="margin-top: 16px;">
+        <ul class="ul1">
+            <li class="li1"><a class="a2" href="index.html"style="font-size: 20px; font-weight: bold;"> Home</a></li>
+            <li class="li1"><a class="a2" href="about.html"style="font-size: 20px; font-weight: bold;">About</a></li>
+            <li class="sub-menu1 li1"><a class="a2" href="#"style="font-size: 20px; font-weight: bold;transition: all .5s ease;"class="coursesDropdownLink">Courses <i class="fa fa-caret-down"></i></a>
+                <ul class="coursesSlideToggle ul1">
+                    <li class="li1"><a class="a2" href="summer.html">Summer Internship & Training Program 2020 <font size="1" color="red">New</font></a></li>
+                    <li class="li1"><a class="a2" href="aiml.html">Guaranteed Job Bootcamp - AI & ML</a></li>
+                    <li class="li1"><a class="a2" href="evening.html">Evening Classes</a></li>
+                    <li class="li1"><a class="a2" href="web.html">Guaranteed Job Bootcamp - Web Development</a></li>
+                    <li class="li1"><a class="a2" href="freePythonClass.html">Free Python Class</a></li>
+                    <li class="li1"><a class="a2" href="freeMLClass.html">Free ML Class</a></li>
+                </ul>
+            </li>
+            <li class="li1"><a class="a2" href="https://medium.com/forsk-labs" target="blank"style="font-size: 20px; font-weight: bold;">Blog</a></li>
+            
+        </ul>
+    </nav>
+     <span class="menu-toggle1">
+         <div class="container1" onclick="myFunction(this),disableScroll()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                            </div>
+    </span>
+
+</header>
+
+<script>
+    $(document).ready(function(){
+        $('.menu-toggle1').click(function(){
+            $('.nav2').toggleClass('active');
+            
+        })
+        $('ul li ').click(function(){
+            $(this).siblings().removeClass('active');
+            $(this).toggleClass('active');
+        })
+        
+       })
+    function myFunction(x) {
+x.classList.toggle("change");
+}
+
+$(document).ready(function(){
+    $(".coursesDropdownLink").click(function(){
+        $(".fa-caret-down").toggleClass("fa-caret-up")
+        });
+    });
+    
+</script>
+<script>
+    $(document).ready(function(){
+        $(".sub-menu1").hover(function(){
+            $("coursesSlideToggle").slideToggle("slow");
+        });
+    });
+</script>

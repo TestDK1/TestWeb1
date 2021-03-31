@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+  $.ajax({
+					url: 'https://api.apispreadsheets.com/data/10237/',
+					type: 'post',
+					data: 'name',
+					success: function () {
+						alert("Form Data Submitted :)")
+					},
+					error: function () {
+						alert("There was an error :(")
+					}
+				});
+}
+</script>
+</head>
+<body>
+  <form id="myForm">
+    <label>Name</label>
+      <br/>
+    <input name="name" />
+      <br/>
+    <label>Email</label>
+      <br/>
+    <input name="email" />
+      <br/>
+    <label>Whats App Number</label>
+      <br/>
+    <input type="tel" name= "whatsapp number"><br/>
+      <br/>
+    <label>Any Query</label>
+      <br/>
+    <textarea name="query">
+      </textarea>
+      <br/>
+      <br/>
+  </form>
+    <button onclick="SubForm()">Submit</button>
+</body>
+</html>

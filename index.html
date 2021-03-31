@@ -1,0 +1,3579 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<title>Learn Data Science through Project Based Learning | Forsk</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="content-disposition" content="inline; filename=filename.pdf">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/NavCSS.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+	<link rel="preload" href="css/css.css" data-rocket-async="style" as="style"
+		onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel="preload" href="css/d3dcc6b20fe3333eea4be639767fe6cb.css" data-rocket-async="style" as="style"
+		onload="this.onload=null;this.rel='stylesheet'" media="all" data-minify="1" />
+	<link rel="shortcut icon" href="css/font/forsklab_lab.ico" />
+	<link rel="icon" type="image/png" href="css/font/forsklab_lab.ico">
+	<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+	<link rel='dns-prefetch' href='https://use.fontawesome.com/' />
+	<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<style id='woocommerce-inline-inline-css' type='text/css'>
+		.woocommerce form .form-row .required {
+			visibility: visible;
+		}
+	</style>
+
+	<style id='font-awesome-official-v4shim-inline-css' type='text/css'>
+		@font-face {
+			font-family: "FontAwesome";
+			src: url("css/font/fa-brands-400.eot"),
+				url("css/font/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+				url("css/font/fa-brands-400.woff2") format("woff2"),
+				url("css/font/fa-brands-400.woff") format("woff"),
+				url("css/font/fa-brands-400.ttf") format("truetype"),
+				url("css/font/fa-brands-400.svg#fontawesome") format("svg");
+		}
+
+		@font-face {
+			font-family: "FontAwesome";
+			src: url("css/font/fa-solid-900.eot"),
+				url("css/font/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+				url("css/font/fa-solid-900.woff2") format("woff2"),
+				url("css/font/fa-solid-900.woff") format("woff"),
+				url("css/font/fa-solid-900.ttf") format("truetype"),
+				url("css/font/fa-solid-900.svg#fontawesome") format("svg");
+		}
+
+		@font-face {
+			font-family: "FontAwesome";
+			src: url("css/font/fa-regular-400.eot"),
+				url("css/font/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+				url("css/font/fa-regular-400.woff2") format("woff2"),
+				url("css/font/fa-regular-400.woff") format("woff"),
+				url("css/font/fa-regular-400.ttf") format("truetype"),
+				url("css/font/fa-regular-400.svg#fontawesome") format("svg");
+			unicode-range: U+F004-F005, U+F007, U+F017, U+F022, U+F024, U+F02E, U+F03E, U+F044, U+F057-F059, U+F06E, U+F070, U+F075, U+F07B-F07C, U+F080, U+F086, U+F089, U+F094, U+F09D, U+F0A0, U+F0A4-F0A7, U+F0C5, U+F0C7-F0C8, U+F0E0, U+F0EB, U+F0F3, U+F0F8, U+F0FE, U+F111, U+F118-F11A, U+F11C, U+F133, U+F144, U+F146, U+F14A, U+F14D-F14E, U+F150-F152, U+F15B-F15C, U+F164-F165, U+F185-F186, U+F191-F192, U+F1AD, U+F1C1-F1C9, U+F1CD, U+F1D8, U+F1E3, U+F1EA, U+F1F6, U+F1F9, U+F20A, U+F247-F249, U+F24D, U+F254-F25B, U+F25D, U+F267, U+F271-F274, U+F279, U+F28B, U+F28D, U+F2B5-F2B6, U+F2B9, U+F2BB, U+F2BD, U+F2C1-F2C2, U+F2D0, U+F2D2, U+F2DC, U+F2ED, U+F328, U+F358-F35B, U+F3A5, U+F3D1, U+F410, U+F4AD;
+		}
+	</style>
+
+	<link rel="preload" as="font" href="css/font/fa-solid-900.woff2" crossorigin> <noscript>
+		<style>
+			.woocommerce-product-gallery {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+
+	<link rel="icon" href="css/font/forsklab_lab.ico" sizes="32x32" />
+	<link rel="icon" href="css/font/forsklab_lab.ico" sizes="192x192" />
+	<link rel="apple-touch-icon" href="css/font/forsklab_lab.ico" />
+
+
+	<noscript>
+		<style id="rocket-lazyload-nojs-css">
+			.rll-youtube-player,
+			[data-lazy-src] {
+				display: none !important;
+			}
+		</style>
+	</noscript>
+	<style type="text/css">
+		.accordion2 {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: 1px solid #d3d3d3;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion2:hover {
+			background-color: #ccc;
+		}
+
+		.accordion2:after {
+			content: '\002B';
+			color: #777;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active:after {
+			content: "\2212";
+		}
+
+		.panel2 {
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+	</style>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+		</script>
+
+	<script>
+		//script for navigation scrolling disable in mobile view
+		var i = 0;
+		function disableScroll() {
+			if (i != 0) {
+				enableScroll();
+
+				console.log(i);
+				console.log('if part')
+				i = 0;
+			}
+			else {
+
+				// Get the current page scroll position 
+				scrollTop =
+					window.pageYOffset || document.documentElement.scrollTop;
+				scrollLeft =
+					window.pageXOffset || document.documentElement.scrollLeft,
+
+					// if any scroll is attempted, 
+					// set this to the previous value 
+					window.onscroll = function () {
+						window.scrollTo(scrollLeft, scrollTop);
+					};
+				console.log(i);
+				i++;
+			}
+		}
+		function enableScroll() {
+			window.onscroll = function () { };
+		}
+
+	</script>
+
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
+	<style>
+		* {
+			box-sizing: border-box
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active,
+		.dot:hover {
+			background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="header" style="background: none;"></div>
+	<div
+		class="bp-nouveau page-template page-template-elementor_header_footer page page-id-5702 wp-custom-logo theme-wplms woocommerce-no-js ehf-template-wplms ehf-stylesheet-wplms blank g3 c6 minimal logged-out elementor-default elementor-template-full-width elementor-kit-2906 elementor-page elementor-page-5702">
+		<div id="global" class="global">
+			<div class="pusher">
+				<div data-elementor-type="wp-page" data-elementor-id="5702" class="elementor elementor-5702"
+					data-elementor-settings="[]">
+					<div class="elementor-inner">
+						<div class="elementor-section-wrap">
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-1b7555f elementor-section-height-full elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+								data-id="1b7555f" data-element_type="section"
+								data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+								<div class="elementor-background-overlay"></div>
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-315e983"
+											data-id="315e983" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5dcd3165"
+											data-id="5dcd3165" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-cf4b0ea elementor-widget elementor-widget-spacer"
+														data-id="cf4b0ea" data-element_type="widget"
+														data-widget_type="spacer.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-spacer">
+																<div class="elementor-spacer-inner"></div>
+															</div>
+														</div>
+													</div>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-8c279b9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="8c279b9" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4a879d0"
+																	data-id="4a879d0" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-e5ed5fd elementor-widget elementor-widget-text-editor"
+																				data-id="e5ed5fd"
+																				data-element_type="widget"
+																				data-widget_type="text-editor.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-text-editor elementor-clearfix">
+																						<h2 class="">
+																							<span
+																								style="color: #ffffff; font-family: Karla; background-color: #4891ff; padding: 1.5%;">Project
+																								Based Learning</span>
+																						</h2>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<div class="elementor-element elementor-element-5fea041 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline"
+														data-id="5fea041" data-element_type="widget"
+														data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;30 Days&quot;,&quot;headline_style&quot;:&quot;highlight&quot;}"
+														data-widget_type="animated-headline.default">
+														<div class="elementor-widget-container">
+															<h1 class="elementor-headline">
+																<span
+																	class="elementor-headline-plain-text elementor-headline-text-wrapper"
+																	style="color: #4891ff; font-family: Karla;">Uplift
+																	your career to become a Data Scientist in</span>
+																<span
+																	class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper"
+																	style="color: #4891ff;font-family: Karla;">03
+																	Months</span>
+															</h1>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-9e00ef3 elementor-widget elementor-widget-text-editor"
+														data-id="9e00ef3" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4><span style=" font-family: Karla;">We have the 03
+																		months intensive boot camp combining in-depth
+																		Python, Data Analytics, machine learning and
+																		deep learning studies as well as hands-on
+																		experience working with data and constructing
+																		learning models.</span></h4>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-553d92c5 elementor-widget elementor-widget-heading"
+														data-id="553d92c5" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h5 class="elementor-heading-title elementor-size-medium"
+																style="color: #000000; font-family: Karla;">Project
+																Based
+																Learning | LIVE</h5>
+														</div>
+													</div>
+													<div class=" elementor-element elementor-element-7da8dd4 elementor-widget elementor-widget-text-editor"
+														data-id="7da8dd4" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p><span style=" font-family: Karla;">The
+																		only Project Base learning to break
+																		into Data
+																		Science career</span></p>
+															</div>
+														</div>
+													</div>
+
+
+
+
+
+
+
+													<button type="button" class="btn btn-primary" data-toggle="modal"
+														data-target="#exampleModalCenter">
+														Register Here for One Week Free Traning
+													</button>
+
+
+
+
+
+
+													<div class="elementor-element elementor-element-df6f9f8 elementor-widget elementor-widget-text-editor"
+														data-id="df6f9f8" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p style="margin-left: 10%;">
+																	<!--<b
+																	style=" font-family: Karla;color: #4891ff"><span
+																		style="text-decoration: line-through;">₹5999</span>/-
+																	₹2999/- Limited time offer!</b>-->
+																<div class="timer"
+																	style="color: #4891ff; margin-left: 21%; font-size: large;">
+																</div>
+																</p>
+
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1d9c12e1"
+											data-id="1d9c12e1" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="" data-id="e158405" data-element_type="widget"
+														data-widget_type="image.default">
+														<div class="">
+															<div class="vsc-controller" data-vscid="mksdsdght"></div>
+															<video controls>
+																<source type="video/mp4" src="Ankur-Video.mp4">
+															</video>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bbaf739"
+											data-id="bbaf739" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-88c8249 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="88c8249" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-072ca59"
+											data-id="072ca59" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f41462f"
+											data-id="f41462f" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-b45c9c8 elementor-widget elementor-widget-text-editor"
+														data-id="b45c9c8" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<div id="LlcdVCgQF8tETvTRT3D81hoKT9Tw0A7u"
+																	class="widget widget-text">
+																	<div id="fmTsVxybyv2fX5nHLD9ct0cXSvJd22Wo"
+																		class="widget widget-text">
+																		<h2
+																			style="color: #4891ff;font-family: Karla; text-align: center">
+																			26th March, 2021
+																			&#8211; 26th June, 2021</h2>
+																		<h2
+																			style=" color: #4891ff;font-family: Karla; text-align: center">
+																			7:00 PM &#8211;
+																			8:00 PM (IST)</h2>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a22da71"
+											data-id="a22da71" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-c061178 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="c061178" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e926a67"
+											data-id="e926a67" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-81d62d5"
+											data-id="81d62d5" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-051f947 elementor-widget elementor-widget-heading"
+														data-id="051f947" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style=" color: #4891ff;font-family: Karla;">About the
+																Program
+															</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-abe5ec4 elementor-widget elementor-widget-text-editor"
+														data-id="abe5ec4" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<!--<h4 style="text-align: center;  font-family: Karla;">
+																Data analysis helps
+																businesses optimize their performances. Implementing it
+																into the business model means companies can help reduce
+																costs by identifying more efficient ways of doing
+																business and by storing large amounts of data. I’ll
+																teach you all there is to learn about Data Analytics in
+																this 1 Month long rigorous course.</h4>-->
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-41e99aa elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+														data-id="41e99aa" data-element_type="widget"
+														data-widget_type="icon-list.default">
+														<div class="elementor-widget-container">
+															<ul class="elementor-icon-list-items">
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">We have a six
+																		months
+																		intensive bootcamp combining in-depth machine
+																		learning and deep learning studies as well as
+																		hands-on experience working with data and
+																		constructing learning models.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">This full time
+																		program
+																		is comprehensive coverage of data science with
+																		Python and data visualisation with Power BI. The
+																		data scientist career path is on the rise and
+																		Forsk
+																		Guaranteed Job Bootcamp in Machine Learning and
+																		AI
+																		will help you learn all that you need to start a
+																		new
+																		career in the data science field.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">This program has
+																		been
+																		designed with inputs from multiple industry
+																		leaders
+																		to ensure that you learn exactly what employers
+																		need.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Our Career Services
+																		team will provide you with the ideal platform to
+																		launch your career through resume building
+																		sessions,
+																		mock interviews, mentorships, interview
+																		preparation.
+																		Our team will also work towards finding you
+																		interview opportunities, and make sure you start
+																		your career in this domain.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Almost 100 hours of
+																		LIVE and Interactive sessions. These sessions
+																		will be conducted over the weekdays.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Requires only 1.5
+																		Hrs/day in evening
+
+
+																		.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">03 Months intensive
+																		Programme
+
+
+																		.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Work from Home
+																		Basis.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">95% Success
+																		rate.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Real Client
+																		Data</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Guided Development
+																		with strong support.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Internship Letter,
+																		Course Completion Certificate.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Real Project for
+																		Better placement.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Opportunity for
+																		working professionals to switch and
+																		Hikes.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Best opportunity
+																		for Engineering Students B.E., B.Tech, BCA, MCA,
+																		MBA, BBA, B.Sc Students can also join.</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-cab68a6"
+											data-id="cab68a6" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-f681b95 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="f681b95" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-5e89b67"
+											data-id="5e89b67" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4919a3c"
+											data-id="4919a3c" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-f9765e0 elementor-widget elementor-widget-heading"
+														data-id="f9765e0" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style="color: #4891ff; font-family: Karla;">Opportunity
+																to Work on Real Client Problems</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-ed7d3dd elementor-widget elementor-widget-text-editor"
+														data-id="ed7d3dd" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla;">Using ML/NLP Techniques
+																	with Data Processing on 14GB Dataset, To Create a
+																	Web-Based Dashboard to Gain Real-Time Analysis on
+																	How Customers Feel About Client's Product
+
+																</h4>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-9669ae0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+														data-id="9669ae0" data-element_type="widget"
+														data-widget_type="icon-list.default">
+														<div class="elementor-widget-container">
+															<ul class="elementor-icon-list-items">
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Student
+																		Management System – You will create a student
+																		management system for a university. You will
+																		build
+																		this system using basic Python
+																		operations.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Spy
+																		Games – You
+																		will decipher a message that you will receive
+																		from
+																		an intel. You will have multiple text files that
+																		need to be read and have certain operations
+																		performed to get our final message.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Analyzing
+																		Weather
+																		Data Set – You will apply all the numpy and
+																		pandas
+																		skills learned so far to do data analysis and
+																		identify any trend using the Matplotlib
+																		library.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Analyzing
+																		Movie
+																		Data Set – You will explore the movie dataset
+																		and
+																		find some movies with high ratings.Your goal is
+																		to
+																		analyze the data and suggest English movies with
+																		high-ratings</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Olympics
+																		Data
+																		Analysis – Throughout this project, you will
+																		explore
+																		the Olympics dataset, look at some interesting
+																		statistics and then try to find out which
+																		country is
+																		the King of the Olympic Games.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Extracting
+																		Business Insights – Apply your knowledge of
+																		Descriptive Statistics & Probability to get
+																		meaningful insights out of the dataset that
+																		specifically focuses on the Banking, Debt,
+																		Financial, Inflation and Systemic Crises.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">FIFA
+																		Project –
+																		You will use data analytics techniques find out
+																		the
+																		best squad for the upcoming football
+																		championship.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Employee
+																		Compensation Analysis – You will predict the
+																		total
+																		compensation based on a database of the salary
+																		and
+																		benefits paid to City employees since fiscal
+																		year
+																		2013.</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																		<i aria-hidden="true" class="fas fa-check"></i>
+																	</span>
+																	<span class="elementor-icon-list-text"
+																		style=" font-family: Karla;">Lending
+																		Club Loan
+																		Prediction – The data contains loan data for the
+																		loans issued and latest payment information.
+																		Your
+																		aim here is to predict the loan status (Whether
+																		the
+																		loan is fully paid or not?)</span>
+																</li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="elementor-element elementor-element-c10c262 center-button elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-html"
+														data-id="c10c262" data-element_type="widget"
+														data-widget_type="html.default">
+														<div class="elementor-widget-container">
+															<div class="center-button">
+																<button type="button" class="btn btn-primary"
+																	data-toggle="modal"
+																	data-target="#exampleModalCenter">
+																	Register Here for One Week Free Traning
+																</button>
+															</div>
+
+
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-fadc20c elementor-widget elementor-widget-text-editor"
+														data-id="fadc20c" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p style="text-align: center;">
+																	<!--<b
+																	style=" font-family: Karla;"><span
+																		style="text-decoration: line-through;">₹5999</span>/-
+																	₹2999/- Limited time offer!</b>-->
+																</p>
+																<div class="timer"
+																	style="color: #4891ff; text-align: center; font-size: large;">
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a94399b"
+										data-id="a94399b" data-element_type="column">
+										<div class="elementor-column-wrap">
+											<div class="elementor-widget-wrap">
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-5974753 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="5974753" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bee0d89"
+											data-id="bee0d89" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8b3ee8d"
+											data-id="8b3ee8d" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-4768432 elementor-widget elementor-widget-heading"
+														data-id="4768432" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style="color: #4891ff; font-family: Karla;">What
+																will we cover</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-6f1c71d elementor-widget elementor-widget-text-editor"
+														data-id="6f1c71d" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla;">Forsk Coding School’s
+																	Data Science training is specifically build to get
+																	you started in your Data Science journey. We will
+																	help you carve out your career transition by
+																	introducing you to a day in Data Scientist’s life.
+																	Along with real time project you will complete
+																	Python Fundamentals, Numpy, Pandas, Dashboard,
+																	Machine Learning, Visualization, Statistics, Linear
+																	and Logistic Regression, Deep Learning, Cloud
+																	Deployment Etc.</h4>
+															</div>
+														</div>
+													</div>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-269ef87 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="269ef87" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ecb6916"
+																	data-id="ecb6916" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-4f85190 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="4f85190"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#1 - Problem
+																									Statement, Solution
+																									Approach, Practical
+																									Python and
+																									Pandas</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								Problem Statement,
+																								Solution Approach and
+																								Wireframe,Basic
+																								Python,Intermediate
+																								Python,4 Regular
+																								Expressions,Mini Task
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-b05fd43 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="b05fd43"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#3 Supervised
+																									machine learning and
+																									building various ml
+																									models</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								Numpy and
+																								Matplotlib,Simple Linear
+																								Regression - feature,
+																								label, modeling,
+																								prediction,Train and
+																								test split of actual
+																								data,Regression - Label
+																								Encoding, Normalization,
+																								Missing Data
+																								Handling,Mini Task</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-8606d60 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="8606d60"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#5 Creating a Bag of
+																									Words classifier and
+																									a pretrained NLP
+																									based model</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								Vectorization and adding
+																								a classifier,2 TF-IDF,
+																								n-grams and saving the
+																								pickle
+																								file,TexBlob,Vader,Mini
+																								Task</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-ba75ad8 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="ba75ad8"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#7 ANN Classifier
+																									with NLP
+																									Techniques</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								CNN and RNN Intro,ANN
+																								Classifier with NLP
+																								Techniques,Model
+																								Performances ,Model
+																								Performances ,Mini Task
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-ba75ad8 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="ba75ad8"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#9 Creating Web
+																									Based Dashboard and
+																									connecting ML/DL
+																									model at the
+																									backend</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								SQL Database -
+																								SQLite,HTML
+																								Playground,CSS
+																								Playground,Introduction
+																								to DASH,Mini Task</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-ba75ad8 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="ba75ad8"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#11 Cloud
+																									Deployment</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-ba75ad8 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="ba75ad8"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#13 Project
+																									Integration and
+																									Github Release
+																									Continue</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1d3ccf7"
+																	data-id="1d3ccf7" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-79af6e5 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="79af6e5"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#2 Handling large
+																									dataset and
+																									practical machine
+																									learning
+																									concepts</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+																								Pandas,How to handle
+																								large dataset?,EDA and
+																								data prepartion,Formal
+																								ML introduction,Mini
+																								Task</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-682034f elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="682034f"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#4 Creating a Bag of
+																									Words classifier and
+																									a pretrained NLP
+																									based model</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								End to end regression
+																								model,Classification
+																								Algorithms,Performance
+																								Matrix and model
+																								analysis,Performance
+																								Matrix and model
+																								analysis,Mini Task</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-d106142 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="d106142"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#6 Shifting to Deep
+																									Learning Based
+																									Models for NLP
+																									Problems</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+
+																								Intro to Deep Learning -
+																								Part I,Intro to Deep
+																								Learning - Part II,Using
+																								ANN for
+																								Regressiron,Using ANN
+																								for Classification,Mini
+																								Task</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-6b17d30 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="6b17d30"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#8 Develop Python
+																									Script to fetch
+																									product review and
+																									save to
+																									Database</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+																								Talking to Internet I -
+																								Request, Urllib2,Talking
+																								to Internet II - GET,
+																								POST,HTML DOM Model,
+																								Scrapping using
+																								BS,Automation using
+																								Selenium,Mini Task
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-6b17d30 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="6b17d30"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#10 Project
+																									Integration and
+																									Final Release - Solo
+																									Development</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Takeaway:
+																								Callbacks and Event
+																								Handling,Graph
+																								Creation,UI with
+																								Dash,Project Integration
+																								+ Github Release
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-6b17d30 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="6b17d30"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#12 Using Power
+																									BI/Tableau for
+																									creating a non
+																									coding based
+																									dashboard</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-6b17d30 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="6b17d30"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-star"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Week
+																									#14 Bonus</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2d1bfd1"
+											data-id="2d1bfd1" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-397ceeb elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="397ceeb" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e7c753b"
+											data-id="e7c753b" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5da32b0"
+											data-id="5da32b0" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-859785a elementor-widget elementor-widget-heading"
+														data-id="859785a" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">
+																Featured in</h2>
+														</div>
+													</div>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-efbe197 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="efbe197" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-4dd822c"
+																	data-id="4dd822c" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-d8cc53d elementor-widget elementor-widget-image"
+																				data-id="d8cc53d"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="60" height="50"
+																							src="css/images/forsk_logo_512.png"
+																							class="attachment-thumbnail size-thumbnail"
+																							alt=""
+																							data-lazy-src="css/images/forsk_logo_512.png" /><noscript><img
+																								width="60" height="50"
+																								src="css/images/forsk_logo_512.png"
+																								class="attachment-thumbnail size-thumbnail"
+																								alt="" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-68da3f4"
+																	data-id="68da3f4" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-4bbaa18 elementor-widget elementor-widget-image"
+																				data-id="4bbaa18"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="50" height="50"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2050%2050'%3E%3C/svg%3E"
+																							class="attachment-thumbnail size-thumbnail"
+																							alt=""
+																							data-lazy-src="css/images/inc-42.aeae33ddf0cb.png" /><noscript><img
+																								width="50" height="50"
+																								src="css/images/inc-42.aeae33ddf0cb.png"
+																								class="attachment-thumbnail size-thumbnail"
+																								alt="" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-3ec763d"
+																	data-id="3ec763d" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-b9c8cc5 elementor-widget elementor-widget-image"
+																				data-id="b9c8cc5"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="1024" height="346"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20346'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/forsk_logo_512.png 1024w, css/images/forsk_logo_719 _264.png 460w, css/images/forsk_logo_512.png 768w, css/images/forsk_logo_512.png 600w, css/images/forsk_logo_512.png 120w, css/images/forsk_logo_512.png 310w, css/images/forsk_logo_512.png 1028w"
+																							data-lazy-sizes="(max-width: 1024px) 100vw, 1024px"
+																							data-lazy-src="css/images/forsk_logo_512.png" /><noscript><img
+																								width="1024"
+																								height="346"
+																								src="css/images/forsk_logo_512.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/forsk_logo_512.png 1024w, css/images/forsk_logo_512.png 460w, css/images/forsk_logo_512.png 768w, css/images/forsk_logo_512.png 600w, css/images/forsk_logo_512.png 120w, css/images/forsk_logo_512.png 310w, css/images/forsk_logo_512.png 1028w"
+																								sizes="(max-width: 1024px) 100vw, 1024px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-cb4f7cd"
+																	data-id="cb4f7cd" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-d548584 elementor-widget elementor-widget-image"
+																				data-id="d548584"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="150" height="51"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2051'%3E%3C/svg%3E"
+																							class="attachment-thumbnail size-thumbnail"
+																							alt=""
+																							data-lazy-src="css/images/outlook.ea6dc1874715-150x51.png" /><noscript><img
+																								width="150" height="51"
+																								src="css/images/outlook.ea6dc1874715-150x51.png"
+																								class="attachment-thumbnail size-thumbnail"
+																								alt="" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-6eec2ca"
+																	data-id="6eec2ca" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-6203321 elementor-widget elementor-widget-image"
+																				data-id="6203321"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="928" height="102"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20928%20102'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/et-logo.png 928w, css/images/et-logo-460x51.png 460w, css/images/et-logo-768x84.png 768w, css/images/et-logo-600x66.png 600w, css/images/et-logo-120x13.png 120w, css/images/et-logo-310x34.png 310w"
+																							data-lazy-sizes="(max-width: 928px) 100vw, 928px"
+																							data-lazy-src="css/images/et-logo.png" /><noscript><img
+																								width="928" height="102"
+																								src="css/images/et-logo.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/et-logo.png 928w, css/images/et-logo-460x51.png 460w, css/images/et-logo-768x84.png 768w, css/images/et-logo-600x66.png 600w, css/images/et-logo-120x13.png 120w, css/images/et-logo-310x34.png 310w"
+																								sizes="(max-width: 928px) 100vw, 928px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-93a7373 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="93a7373" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b12d2bb"
+																	data-id="b12d2bb" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-f1a8270 elementor-widget elementor-widget-image"
+																				data-id="f1a8270"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="100" height="100"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E"
+																							class="attachment-shop_thumbnail size-shop_thumbnail"
+																							alt=""
+																							data-lazy-srcset="css/images/unnamed-removebg-preview-100x100.png 100w, css/images/unnamed-removebg-preview-150x150.png 150w, css/images/unnamed-removebg-preview-300x300.png 300w"
+																							data-lazy-sizes="(max-width: 100px) 100vw, 100px"
+																							data-lazy-src="css/images/unnamed-removebg-preview-100x100.png" /><noscript><img
+																								width="100" height="100"
+																								src="css/images/unnamed-removebg-preview-100x100.png"
+																								class="attachment-shop_thumbnail size-shop_thumbnail"
+																								alt=""
+																								srcset="css/images/unnamed-removebg-preview-100x100.png 100w, css/images/unnamed-removebg-preview-150x150.png 150w, css/images/unnamed-removebg-preview-300x300.png 300w"
+																								sizes="(max-width: 100px) 100vw, 100px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-297a9ad"
+																	data-id="297a9ad" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-3af757c elementor-widget elementor-widget-text-editor"
+																				data-id="3af757c"
+																				data-element_type="widget"
+																				data-widget_type="text-editor.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-text-editor elementor-clearfix">
+																						<h4><span
+																								style="color: #3c4858; font-family: roboto;"><span
+																									style="font-size: 19px;"><b
+																										style=" font-family: Karla;">Ranked
+																										the best Data
+																										Science Bootcamp
+																										Globally
+																										2020-21</b></span></span>
+																						</h4>
+																						<p><img class="alignnone wp-image-2736 size-full"
+																								src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20162%2018'%3E%3C/svg%3E"
+																								alt="" width="162"
+																								height="18"
+																								data-lazy-srcset="css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296.png 162w, css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296-150x18.png 150w, css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296-120x13.png 120w"
+																								data-lazy-sizes="(max-width: 162px) 100vw, 162px"
+																								data-lazy-src="css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296.png" /><noscript><img
+																									class="alignnone wp-image-2736 size-full"
+																									src="css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296.png"
+																									alt="" width="162"
+																									height="18"
+																									srcset="css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296.png 162w, css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296-150x18.png 150w, css/images/program-google-rating.69d9fcc01d87-oxlincjwyxmimjuzivufn7of2tthftovbn0y6zxeic-e1604324004296-120x13.png 120w"
+																									sizes="(max-width: 162px) 100vw, 162px" /></noscript>4.91/5
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3f5fdd0"
+											data-id="3f5fdd0" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-672fe76 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="672fe76" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d7123e8"
+											data-id="d7123e8" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-58c1c3d"
+											data-id="58c1c3d" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-481436e elementor-widget elementor-widget-heading"
+														data-id="481436e" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style=" color: #4891ff;font-family: Karla;">Who
+																is this workshop for</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-e6c5b33 elementor-widget elementor-widget-text-editor"
+														data-id="e6c5b33" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix" ">
+															<h4 style=" font-family: Karla;">It is myth that only people who have a coding
+																background
+																can make it in Data Science. Maths and Programming form
+																the base in Data Science, but it is not a skill which
+																cannot be developed. I’ve seen people with 100s
+																of <u>students, freshers, managers</u> from both tech
+																and <u>non tech background</u> make a <u>successful
+																	transition</u>. You will find some of them once you
+																scroll.</h4>
+															</div>
+														</div>
+													</div>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-6f105dcf elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="6f105dcf" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-56c69ffc"
+																	data-id="56c69ffc" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-1a89f2ee elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="1a89f2ee"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-book-reader"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Student/
+																									Fresher</span>
+																							</h3>
+																							<p class="elementor-icon-box-description"
+																								style=" font-family: Karla;">
+																								Just starting your
+																								careers
+																								and want to do something
+																								new. You are in a fix as
+																								to
+																								whether you can make it
+																								or
+																								not. Scared to take the
+																								bold
+																								move.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-57169aae"
+																	data-id="57169aae" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-5594654f elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="5594654f"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-person-booth"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Tech
+																									Managers</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Want to stay up-to-date
+																								with
+																								the newer technologies.
+																								Apply yourself better
+																								and
+																								manage or guide your
+																								team to
+																								solve problems in a
+																								better
+																								way.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-57414837"
+																	data-id="57414837" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-492c5006 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="492c5006"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-chair"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">2-5yrs
+																									of
+																									experience</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Early starters. You’ve
+																								realized the new buzz
+																								and
+																								want to start before it
+																								is
+																								too late. This is the
+																								perfect time to switch.
+																								Get
+																								the hike in your career
+																								early on.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-22e27d2d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="22e27d2d" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-155947a2"
+																	data-id="155947a2" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-583a7e48 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="583a7e48"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="far fa-sun"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">Non-tech
+																									Aspirants</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								Mathematics,
+																								Programming. It
+																								surely sounds difficult
+																								but
+																								with right amount of
+																								hardwork and some
+																								guidance
+																								you can make it. Your
+																								experience in different
+																								domain will give you an
+																								extra edge.</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-689406c0"
+																	data-id="689406c0" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-78a7dc55 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="78a7dc55"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="fas fa-chess-king"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">10+yrs
+																									of
+																									experience</span>
+																							</h3>
+																							<p style=" font-family: Karla;"
+																								class="elementor-icon-box-description">
+																								You are mostly saturated
+																								with what you do, and
+																								want
+																								to do something new. At
+																								the
+																								same time you want to
+																								leverage your management
+																								experience. You can do
+																								wonders with Data
+																								Science
+
+																							</p>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a1435a0"
+																	data-id="1a1435a0" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-5a4c7756 elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+																				data-id="5a4c7756"
+																				data-element_type="widget"
+																				data-widget_type="icon-box.default">
+																				<div class="elementor-widget-container">
+																					<div
+																						class="elementor-icon-box-wrapper">
+																						<div
+																							class="elementor-icon-box-icon">
+																							<span
+																								class="elementor-icon elementor-animation-grow">
+																								<i aria-hidden="true"
+																									class="far fa-grin-stars"></i>
+																							</span>
+																						</div>
+																						<div
+																							class="elementor-icon-box-content">
+																							<h3
+																								class="elementor-icon-box-title">
+																								<span
+																									style=" font-family: Karla;">YOU</span>
+																							</h3>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-8ed5927"
+											data-id="8ed5927" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-6f5449f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="6f5449f" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb04cae"
+											data-id="fb04cae" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-ca2a21e elementor-widget elementor-widget-heading"
+														data-id="ca2a21e" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style="color: #4891ff; font-family: Karla;">Our
+																pool of Successful Learners</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-0e2ae59 elementor-widget elementor-widget-text-editor"
+														data-id="0e2ae59" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla; text-align: center;">
+																	Here’s what my <a href="" target="_blank"
+																		rel="noopener">happy
+																		learners</a> had to say about us. Time taken to
+																	take
+																	decision adds to the cost. ACT NOW!</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-d4b988b elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="d4b988b" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-25df1dd"
+											data-id="25df1dd" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-429abb2"
+											data-id="429abb2" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-31d4ec2 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+														data-id="31d4ec2" data-element_type="widget"
+														data-settings="{&quot;aspect_ratio&quot;:&quot;169&quot;}"
+														data-widget_type="video.default">
+														<div class="elementor-widget-container">
+															<div
+																class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+																<div class="fitvids"><iframe loading="lazy"
+																		class="elementor-video-iframe" allowfullscreen
+																		title="" src="about:blank"
+																		data-rocket-lazyload="fitvidscompatible"
+																		data-lazy-src="https://youtube.com/embed/2OG1j5xSHI8"></iframe><noscript><iframe
+																			class="elementor-video-iframe"
+																			allowfullscreen title=""
+																			src="https://youtube.com/embed/2OG1j5xSHI8"></iframe></noscript>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-31d4ec2 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+														data-id="31d4ec2" data-element_type="widget"
+														data-settings="{&quot;aspect_ratio&quot;:&quot;169&quot;}"
+														data-widget_type="video.default">
+														<div class="elementor-widget-container">
+															<div
+																class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+																<div class="fitvids"><iframe loading="lazy"
+																		class="elementor-video-iframe" allowfullscreen
+																		title="" src="about:blank"
+																		data-rocket-lazyload="fitvidscompatible"
+																		data-lazy-src="https://youtube.com/embed/2OG1j5xSHI8"></iframe><noscript><iframe
+																			class="elementor-video-iframe"
+																			allowfullscreen title=""
+																			src="https://youtube.com/embed/2OG1j5xSHI8"></iframe></noscript>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d1a38c4"
+											data-id="d1a38c4" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-7595797 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+														data-id="7595797" data-element_type="widget"
+														data-settings="{&quot;aspect_ratio&quot;:&quot;169&quot;}"
+														data-widget_type="video.default">
+														<div class="elementor-widget-container">
+															<div
+																class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+																<div class="fitvids"><iframe loading="lazy"
+																		class="elementor-video-iframe" allowfullscreen
+																		title="" src="about:blank"
+																		data-rocket-lazyload="fitvidscompatible"
+																		data-lazy-src="https://youtube.com/embed/kG6Z0iV7Tf8"></iframe><noscript><iframe
+																			class="elementor-video-iframe"
+																			allowfullscreen title=""
+																			src="https://youtube.com/embed/kG6Z0iV7Tf8"></iframe></noscript>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-7595797 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+														data-id="7595797" data-element_type="widget"
+														data-settings="{&quot;aspect_ratio&quot;:&quot;169&quot;}"
+														data-widget_type="video.default">
+														<div class="elementor-widget-container">
+															<div
+																class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+																<div class="fitvids"><iframe loading="lazy"
+																		class="elementor-video-iframe" allowfullscreen
+																		title="" src="about:blank"
+																		data-rocket-lazyload="fitvidscompatible"
+																		data-lazy-src="https://youtube.com/embed/kG6Z0iV7Tf8"></iframe><noscript><iframe
+																			class="elementor-video-iframe"
+																			allowfullscreen title=""
+																			src="https://youtube.com/embed/kG6Z0iV7Tf8"></iframe></noscript>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-248642c"
+											data-id="248642c" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-4a6113e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="4a6113e" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-31550a6"
+											data-id="31550a6" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+
+													<div class="elementor-element elementor-element-a9b41a9 center-button elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-html"
+														data-id="a9b41a9" data-element_type="widget"
+														data-widget_type="html.default">
+														<div class="elementor-widget-container">
+															<div class="center-button">
+																<button type="button" class="btn btn-primary"
+																	data-toggle="modal"
+																	data-target="#exampleModalCenter">
+																	Register Here for One Week Free Traning
+																</button>
+															</div>
+
+
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-af1215f elementor-widget elementor-widget-text-editor"
+														data-id="af1215f" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p style="text-align: center;">
+																	<!--<b
+																style=" font-family: Karla;"><span
+																	style="text-decoration: line-through;">₹5999</span>/-
+																₹2999/- Limited time offer!</b>-->
+																</p>
+																<div class="timer"
+																	style="color: #4891ff; text-align: center; font-size: large;">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-ee8c889 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="ee8c889" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7ac9080"
+											data-id="7ac9080" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-f5987b8 elementor-widget elementor-widget-heading"
+														data-id="f5987b8" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style="color: #4891ff; font-family: Karla;">What
+																our learners have to say</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-04971a0 elementor-widget elementor-widget-text-editor"
+														data-id="04971a0" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla; text-align: center;">
+																	We at GreyAtom deeply impact
+																	people’s life and it shows. See what some of them
+																	had to
+																	say about us.</h4>
+															</div>
+														</div>
+													</div>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-b1bc191 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="b1bc191" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d039224"
+																	data-id="d039224" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-4aec663 elementor-widget elementor-widget-image"
+																				data-id="4aec663"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="301" height="149"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20301%20149'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.45.33_PM.png 301w, css/images/Screenshot_2020_08_13_at_4.45.33_PM-120x59.png 120w"
+																							data-lazy-sizes="(max-width: 301px) 100vw, 301px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.45.33_PM.png" /><noscript><img
+																								width="301" height="149"
+																								src="css/images/Screenshot_2020_08_13_at_4.45.33_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.45.33_PM.png 301w, css/images/Screenshot_2020_08_13_at_4.45.33_PM-120x59.png 120w"
+																								sizes="(max-width: 301px) 100vw, 301px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-87f641c"
+																	data-id="87f641c" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-3559f3f elementor-widget elementor-widget-image"
+																				data-id="3559f3f"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="359" height="144"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20359%20144'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_07_08_at_12.34.46_PM.png 359w, css/images/Screenshot_2020_07_08_at_12.34.46_PM-120x48.png 120w,css/images/Screenshot_2020_07_08_at_12.34.46_PM-310x124.png 310w"
+																							data-lazy-sizes="(max-width: 359px) 100vw, 359px"
+																							data-lazy-src="css/images/Screenshot_2020_07_08_at_12.34.46_PM.png" /><noscript><img
+																								width="359" height="144"
+																								src="css/images/Screenshot_2020_07_08_at_12.34.46_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_07_08_at_12.34.46_PM.png 359w, css/images/Screenshot_2020_07_08_at_12.34.46_PM-120x48.png 120w, css/images/Screenshot_2020_07_08_at_12.34.46_PM-310x124.png 310w"
+																								sizes="(max-width: 359px) 100vw, 359px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-133bbe7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="133bbe7" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-cb00b96"
+																	data-id="cb00b96" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-bc166ac elementor-widget elementor-widget-image"
+																				data-id="bc166ac"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="293" height="150"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20293%20150'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.46.29_PM.png 293w, css/images/Screenshot_2020_08_13_at_4.46.29_PM-120x61.png 120w"
+																							data-lazy-sizes="(max-width: 293px) 100vw, 293px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.46.29_PM.png" /><noscript><img
+																								width="293" height="150"
+																								src="css/images/Screenshot_2020_08_13_at_4.46.29_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.46.29_PM.png 293w, css/images/Screenshot_2020_08_13_at_4.46.29_PM-120x61.png 120w"
+																								sizes="(max-width: 293px) 100vw, 293px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c392916"
+																	data-id="c392916" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-74827a1 elementor-widget elementor-widget-image"
+																				data-id="74827a1"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="297" height="190"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20297%20190'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.46.08_PM.png 297w, css/images/Screenshot_2020_08_13_at_4.46.08_PM-120x77.png 120w"
+																							data-lazy-sizes="(max-width: 297px) 100vw, 297px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.46.08_PM.png" /><noscript><img
+																								width="297" height="190"
+																								src="css/images/Screenshot_2020_08_13_at_4.46.08_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.46.08_PM.png 297w, css/images/Screenshot_2020_08_13_at_4.46.08_PM-120x77.png 120w"
+																								sizes="(max-width: 297px) 100vw, 297px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-47ca6dc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="47ca6dc" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-53a0750"
+																	data-id="53a0750" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-77f718c elementor-widget elementor-widget-image"
+																				data-id="77f718c"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="292" height="231"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20292%20231'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.46.46_PM.png 292w, css/images/css/images/Screenshot_2020_08_13_at_4.46.46_PM-120x95.png 120w"
+																							data-lazy-sizes="(max-width: 292px) 100vw, 292px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.46.46_PM.png" /><noscript><img
+																								width="292" height="231"
+																								src="css/images/Screenshot_2020_08_13_at_4.46.46_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.46.46_PM.png 292w, css/images/css/images/Screenshot_2020_08_13_at_4.46.46_PM-120x95.png 120w"
+																								sizes="(max-width: 292px) 100vw, 292px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-07cbd44"
+																	data-id="07cbd44" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-4549c86 elementor-widget elementor-widget-image"
+																				data-id="4549c86"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="299" height="188"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20299%20188'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.45.18_PM.png 299w, css/images/Screenshot_2020_08_13_at_4.45.18_PM-120x75.png 120w"
+																							data-lazy-sizes="(max-width: 299px) 100vw, 299px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.45.18_PM.png" /><noscript><img
+																								width="299" height="188"
+																								src="css/images/Screenshot_2020_08_13_at_4.45.18_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.45.18_PM.png 299w, css/images/Screenshot_2020_08_13_at_4.45.18_PM-120x75.png 120w"
+																								sizes="(max-width: 299px) 100vw, 299px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section
+														class="elementor-section elementor-inner-section elementor-element elementor-element-7242977 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+														data-id="7242977" data-element_type="section">
+														<div class="elementor-container elementor-column-gap-default">
+															<div class="elementor-row">
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-90f7aab"
+																	data-id="90f7aab" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-213ac78 elementor-widget elementor-widget-image"
+																				data-id="213ac78"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="296" height="239"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20296%20239'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.46.19_PM.png 296w, css/images/css/images/Screenshot_2020_08_13_at_4.46.19_PM-120x97.png 120w"
+																							data-lazy-sizes="(max-width: 296px) 100vw, 296px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.46.19_PM.png" /><noscript><img
+																								width="296" height="239"
+																								src="css/images/Screenshot_2020_08_13_at_4.46.19_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.46.19_PM.png 296w, css/images/css/images/Screenshot_2020_08_13_at_4.46.19_PM-120x97.png 120w"
+																								sizes="(max-width: 296px) 100vw, 296px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5ef58bd"
+																	data-id="5ef58bd" data-element_type="column">
+																	<div
+																		class="elementor-column-wrap elementor-element-populated">
+																		<div class="elementor-widget-wrap">
+																			<div class="elementor-element elementor-element-a73a9db elementor-widget elementor-widget-image"
+																				data-id="a73a9db"
+																				data-element_type="widget"
+																				data-widget_type="image.default">
+																				<div class="elementor-widget-container">
+																					<div class="elementor-image">
+																						<img width="296" height="321"
+																							src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20296%20321'%3E%3C/svg%3E"
+																							class="attachment-large size-large"
+																							alt=""
+																							data-lazy-srcset="css/images/Screenshot_2020_08_13_at_4.45.56_PM.png 296w, css/images/Screenshot_2020_08_13_at_4.45.56_PM-111x120.png 111w"
+																							data-lazy-sizes="(max-width: 296px) 100vw, 296px"
+																							data-lazy-src="css/images/Screenshot_2020_08_13_at_4.45.56_PM.png" /><noscript><img
+																								width="296" height="321"
+																								src="css/images/Screenshot_2020_08_13_at_4.45.56_PM.png"
+																								class="attachment-large size-large"
+																								alt=""
+																								srcset="css/images/Screenshot_2020_08_13_at_4.45.56_PM.png 296w, css/images/Screenshot_2020_08_13_at_4.45.56_PM-111x120.png 111w"
+																								sizes="(max-width: 296px) 100vw, 296px" /></noscript>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-13c24bd elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="13c24bd" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e762e9"
+											data-id="9e762e9" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-8fae260 elementor-widget elementor-widget-heading"
+														data-id="8fae260" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style=" color: #4891ff;font-family: Karla;">Who
+																are the mentors</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-14dfc80 elementor-widget elementor-widget-text-editor"
+														data-id="14dfc80" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla; text-align: center;">
+																	Industry Practitioners.
+																	Experienced. Have Depth. Love Teaching. Above all
+																	AMAZING HUMANS.</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-151376a1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="151376a1" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-no">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-14cb09a2"
+											data-id="14cb09a2" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-67575c05 elementor-vertical-align-middle elementor-position-top elementor-widget elementor-widget-image-box"
+														data-id="67575c05" data-element_type="widget"
+														data-widget_type="image-box.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image-box-wrapper">
+																<figure class="elementor-image-box-img"><img width="180"
+																		height="180"
+																		src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E"
+																		class="attachment-full size-full" alt=""
+																		data-lazy-srcset="css/images/Manas_Ranjan_Kar.jpg 180w, css/images/Manas_Ranjan_Kar-150x150.jpg 150w, css/images/Manas_Ranjan_Kar-100x100.jpg 100w, css/images/Manas_Ranjan_Kar-120x120.jpg 120w"
+																		data-lazy-sizes="(max-width: 180px) 100vw, 180px"
+																		data-lazy-src="css/images/Manas_Ranjan_Kar.jpg" /><noscript><img
+																			width="180" height="180"
+																			src="css/images/Manas_Ranjan_Kar.jpg"
+																			class="attachment-full size-full" alt=""
+																			srcset="css/images/Manas_Ranjan_Kar.jpg 180w, css/images/Manas_Ranjan_Kar-150x150.jpg 150w, css/images/Manas_Ranjan_Kar-100x100.jpg 100w, css/images/Manas_Ranjan_Kar-120x120.jpg 120w"
+																			sizes="(max-width: 180px) 100vw, 180px" /></noscript>
+																</figure>
+																<div class="elementor-image-box-content">
+																	<h3 class="elementor-image-box-title"
+																		style=" font-family: Karla;">Manas
+																		Ranjan Kar
+																	</h3>
+																	<p class="elementor-image-box-description"
+																		style=" font-family: Karla;">Data
+																		scientist at Episource</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-74f9c9ac"
+											data-id="74f9c9ac" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-4fa8914b elementor-vertical-align-middle elementor-position-top elementor-widget elementor-widget-image-box"
+														data-id="4fa8914b" data-element_type="widget"
+														data-widget_type="image-box.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image-box-wrapper">
+																<figure class="elementor-image-box-img"><img width="180"
+																		height="180"
+																		src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E"
+																		class="attachment-full size-full" alt=""
+																		data-lazy-srcset="css/images/rohit_ghosh.jpg 180w, css/images/rohit_ghosh-150x150.jpg 150w, css/images/rohit_ghosh-100x100.jpg 100w, css/images/rohit_ghosh-120x120.jpg 120w"
+																		data-lazy-sizes="(max-width: 180px) 100vw, 180px"
+																		data-lazy-src="css/images/rohit_ghosh.jpg" /><noscript><img
+																			width="180" height="180"
+																			src="css/images/rohit_ghosh.jpg"
+																			class="attachment-full size-full" alt=""
+																			srcset="css/images/rohit_ghosh.jpg 180w, css/images/rohit_ghosh-150x150.jpg 150w, css/images/rohit_ghosh-100x100.jpg 100w, css/images/rohit_ghosh-120x120.jpg 120w"
+																			sizes="(max-width: 180px) 100vw, 180px" /></noscript>
+																</figure>
+																<div class="elementor-image-box-content">
+																	<h3 class="elementor-image-box-title"
+																		style=" font-family: Karla;">Rohit
+																		Ghosh</h3>
+																	<p class="elementor-image-box-description"
+																		style=" font-family: Karla;">Director
+																		of
+																		BD at Qure.ai</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-47a1ac9d"
+											data-id="47a1ac9d" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-6bef2775 elementor-vertical-align-middle elementor-position-top elementor-widget elementor-widget-image-box"
+														data-id="6bef2775" data-element_type="widget"
+														data-widget_type="image-box.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image-box-wrapper">
+																<figure class="elementor-image-box-img"><img width="180"
+																		height="180"
+																		src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E"
+																		class="attachment-full size-full" alt=""
+																		data-lazy-srcset="css/images/Supriya_Adep.jpeg 180w, css/images/Supriya_Adep-150x150.jpeg 150w, css/images/Supriya_Adep-100x100.jpeg 100w, css/images/Supriya_Adep-120x120.jpeg 120w"
+																		data-lazy-sizes="(max-width: 180px) 100vw, 180px"
+																		data-lazy-src="css/images/Supriya_Adep.jpeg" /><noscript><img
+																			width="180" height="180"
+																			src="css/images/Supriya_Adep.jpeg"
+																			class="attachment-full size-full" alt=""
+																			srcset="css/images/Supriya_Adep.jpeg 180w, css/images/Supriya_Adep-150x150.jpeg 150w, css/images/Supriya_Adep-100x100.jpeg 100w, css/images/Supriya_Adep-120x120.jpeg 120w"
+																			sizes="(max-width: 180px) 100vw, 180px" /></noscript>
+																</figure>
+																<div class="elementor-image-box-content">
+																	<h3 class="elementor-image-box-title"
+																		style=" font-family: Karla;">Supriya
+																		Adep</h3>
+																	<p class="elementor-image-box-description"
+																		style=" font-family: Karla;">Software
+																		engineer at Fractal</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-94bf9b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="94bf9b5" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-no">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a8d86ea"
+											data-id="a8d86ea" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-34394a1 elementor-vertical-align-middle elementor-position-top elementor-widget elementor-widget-image-box"
+														data-id="34394a1" data-element_type="widget"
+														data-widget_type="image-box.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image-box-wrapper">
+																<figure class="elementor-image-box-img"><img width="180"
+																		height="180"
+																		src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E"
+																		class="attachment-full size-full"
+																		alt="GreyAtom mentor Fatos Ismali"
+																		data-lazy-srcset="css/images/Fatos_Ismali.jpg 180w, css/images/Fatos_Ismali-150x150.jpg 150w, css/images/Fatos_Ismali-100x100.jpg 100w, css/images/Fatos_Ismali-120x120.jpg 120w"
+																		data-lazy-sizes="(max-width: 180px) 100vw, 180px"
+																		data-lazy-src="css/images/Fatos_Ismali.jpg" /><noscript><img
+																			width="180" height="180"
+																			src="css/images/Fatos_Ismali.jpg"
+																			class="attachment-full size-full"
+																			alt="GreyAtom mentor Fatos Ismali"
+																			srcset="css/images/Fatos_Ismali.jpg 180w, css/images/Fatos_Ismali-150x150.jpg 150w, css/images/Fatos_Ismali-100x100.jpg 100w, css/images/Fatos_Ismali-120x120.jpg 120w"
+																			sizes="(max-width: 180px) 100vw, 180px" /></noscript>
+																</figure>
+																<div class="elementor-image-box-content">
+																	<h3 class="elementor-image-box-title"
+																		style=" font-family: Karla;">Fatos
+																		Ismali</h3>
+																	<p class="elementor-image-box-description"
+																		style=" font-family: Karla;">Data
+																		Solutions Architect at Microsoft</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-07c50d3"
+											data-id="07c50d3" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-a96b4f3 elementor-vertical-align-middle elementor-position-top elementor-widget elementor-widget-image-box"
+														data-id="a96b4f3" data-element_type="widget"
+														data-widget_type="image-box.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image-box-wrapper">
+																<figure class="elementor-image-box-img"><img width="180"
+																		height="180"
+																		src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E"
+																		class="attachment-full size-full" alt=""
+																		data-lazy-srcset="css/images/Shantanu_Kumar.jpg 180w, css/images/Shantanu_Kumar-150x150.jpg 150w, css/images/Shantanu_Kumar-100x100.jpg 100w, css/images/Shantanu_Kumar-120x120.jpg 120w"
+																		data-lazy-sizes="(max-width: 180px) 100vw, 180px"
+																		data-lazy-src="css/images/Shantanu_Kumar.jpg" /><noscript><img
+																			width="180" height="180"
+																			src="css/images/Shantanu_Kumar.jpg"
+																			class="attachment-full size-full" alt=""
+																			srcset="css/images/Shantanu_Kumar.jpg 180w, css/images/Shantanu_Kumar-150x150.jpg 150w, css/images/Shantanu_Kumar-100x100.jpg 100w, css/images/Shantanu_Kumar-120x120.jpg 120w"
+																			sizes="(max-width: 180px) 100vw, 180px" /></noscript>
+																</figure>
+																<div class="elementor-image-box-content">
+																	<h3 class="elementor-image-box-title"
+																		style=" font-family: Karla;">Shantanu
+																		Kumar
+																	</h3>
+																	<p class="elementor-image-box-description"
+																		style=" font-family: Karla;">Head of
+																		AI
+																		Products at inFeedo</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2bf8150"
+											data-id="2bf8150" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-3e3d977 elementor-vertical-align-middle elementor-position-top elementor-widget elementor-widget-image-box"
+														data-id="3e3d977" data-element_type="widget"
+														data-widget_type="image-box.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-image-box-wrapper">
+																<figure class="elementor-image-box-img"><img width="180"
+																		height="180"
+																		src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E"
+																		class="attachment-full size-full" alt=""
+																		data-lazy-srcset="css/images/Vedant_Dwivedi.jpg 180w, css/images/Vedant_Dwivedi-150x150.jpg 150w, css/images/Vedant_Dwivedi-100x100.jpg 100w, css/images/Vedant_Dwivedi-120x120.jpg 120w"
+																		data-lazy-sizes="(max-width: 180px) 100vw, 180px"
+																		data-lazy-src="css/images/Vedant_Dwivedi.jpg" /><noscript><img
+																			width="180" height="180"
+																			src="css/images/Vedant_Dwivedi.jpg"
+																			class="attachment-full size-full" alt=""
+																			srcset="css/images/Vedant_Dwivedi.jpg 180w, css/images/Vedant_Dwivedi-150x150.jpg 150w, css/images/Vedant_Dwivedi-100x100.jpg 100w, css/images/Vedant_Dwivedi-120x120.jpg 120w"
+																			sizes="(max-width: 180px) 100vw, 180px" /></noscript>
+																</figure>
+																<div class="elementor-image-box-content">
+																	<h3 class="elementor-image-box-title"
+																		style=" font-family: Karla;">Vedant
+																		Dwivedi
+																	</h3>
+																	<p class="elementor-image-box-description"
+																		style=" font-family: Karla;">Data
+																		Scientist at Jio</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-12b882a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="12b882a" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfa7bbd"
+											data-id="dfa7bbd" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+
+													<div class="elementor-element elementor-element-a9b41a9 center-button elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-html"
+														data-id="a9b41a9" data-element_type="widget"
+														data-widget_type="html.default">
+														<div class="elementor-widget-container">
+															<div class="center-button">
+																<button type="button" class="btn btn-primary"
+																	data-toggle="modal"
+																	data-target="#exampleModalCenter">
+																	Register Here for One Week Free Traning
+																</button>
+															</div>
+
+
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-af1215f elementor-widget elementor-widget-text-editor"
+														data-id="af1215f" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p style="text-align: center;">
+																	<!--<b
+																style=" font-family: Karla;"><span
+																	style="text-decoration: line-through;">₹5999</span>/-
+																₹2999/- Limited time offer!</b>-->
+																</p>
+																<div class="timer"
+																	style="color: #4891ff; text-align: center; font-size: large;">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-bb1840d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="bb1840d" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-14d7d3d"
+											data-id="14d7d3d" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-59e527e"
+											data-id="59e527e" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-5975aa4 elementor-widget elementor-widget-heading"
+														data-id="5975aa4" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style=" color: #4891ff;font-family: Karla;">You
+																will get a Certificate too</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-0f7f6c9 elementor-widget elementor-widget-text-editor"
+														data-id="0f7f6c9" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla;">We know the
+																	importance of certificate and want you to
+																	have some credit for attending the workshop. If you
+																	are
+																	college graduate – we can issue NAAC and NBA
+																	compliant
+																	Internship Certificate on Completion of “Data
+																	Analytics
+																	with Python Course” on request.</h4>
+															</div>
+														</div>
+													</div>
+
+
+
+												</div>
+											</div>
+										</div>
+
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-716f080"
+											data-id="716f080" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="css/images/0002.jpg" alt="First slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="css/images/0003.jpg" alt="Second slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="css/images/0001.jpg" alt="Third slide">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-6aa1988 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="6aa1988" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-caac2a4"
+											data-id="caac2a4" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-24a9df0"
+											data-id="24a9df0" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-38c16f2 elementor-widget elementor-widget-heading"
+														data-id="38c16f2" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style=" color: #4891ff;font-family: Karla;">Have
+																more questions…</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-9be9923 elementor-widget elementor-widget-text-editor"
+														data-id="9be9923" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla; text-align: center;">
+																	I will help you resolve all
+																	your questions. Check out some of the frequently
+																	asked
+																	questions below. In case you you still have question
+																	feel free to ping me on WhatsApp by clicking on the
+																	button below.</h4>
+															</div>
+														</div>
+													</div>
+
+													<div class="elementor-element elementor-element-dc1d9dc elementor-widget elementor-widget-accordion"
+														data-id="dc1d9dc" data-element_type="widget"
+														data-widget_type="accordion.default">
+														<div class="elementor-widget-container">
+
+															<div class="elementor-accordion" role="tablist"
+																style="font-family:Karla; font-weight: bold;">
+																<button class="accordion2">When does the Project
+																	Training start?</button>
+
+																<div class="panel2">
+																	<p>The Project Training starts on Friday, 26th March
+																		and will go on for the next 6 days. </p>
+																</div>
+																<button class="accordion2">What are the
+																	timings?</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">Sessions used to
+																		conduct every day at 6:00 PM IST</p>
+
+																</div>
+
+																<button class="accordion2">Will this be live or
+																	pre-recorded?</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">No, its live and
+																		interactive and sessions</p>
+
+																</div>
+																<button class="accordion2">Would there be any
+																	certificate on completion?</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">Yes, students who
+																		will complete training successfully are eligible
+																		for certificate.</p>
+
+																</div>
+																<button class="accordion2">Can I download the
+																	videos?</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">Yes, Everyday you
+																		will receive the recording, you can download
+																		them.</p>
+
+																</div>
+																<button class="accordion2">I
+																	made the payment but didn’t receive any
+																	email</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">
+																		After the payment, you will receive the receipt
+																		in 24 Hrs.
+																	</p>
+
+																</div>
+																<button class="accordion2">Will I get lifetime access to
+																	the videos?</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">For lifetime you can
+																		download recorded lectures in your local
+																		machine.</p>
+
+																</div>
+																<button class="accordion2">Do I need to know anything
+																	about Data Science to do this program?</button>
+																<div class="panel2">
+																	<p style=" font-family: Karla;">Basic programming is
+																		more than enough, We will start from very basic
+																		.</p>
+																</div>
+																<button class="accordion2">Do I need special software or
+																	hardware?</button>
+																<div class="panel2">
+																	<p>Advice to have 4 Gb of Ram in your System from
+																		smooth conduction.</p>
+																</div>
+																<button class="accordion2">What happens if I can't make
+																	one of the days?</button>
+																<div class="panel2">
+																	<p>For Missing Sessions, you can go through the
+																		recording on the same day.</p>
+																</div>
+																<button class="accordion2">Can I put my projects on
+																	GitHub? Can I blog about it? Can I add it to my
+																	portfolio?</button>
+																<div class="panel2">
+																	<p>Yes, you can.</p>
+																</div>
+																<button class="accordion2">How will I be
+																	charged?</button>
+																<div class="panel2">
+																	<p>After one week training you can enroll in 3
+																		months programme by paying the Fee i.e. INR 9K.
+																	</p>
+																</div>
+																<button class="accordion2">I can't find my question
+																	here!</button>
+																<div class="panel2">
+																	<p>please feel free to do Whatsapp us (+91)
+																		7851929944.</p>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bd2f74d"
+											data-id="bd2f74d" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section
+								class="elementor-section elementor-top-section elementor-element elementor-element-2b17f9b elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								data-id="2b17f9b" data-element_type="section"
+								data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-row">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3b46f9c"
+											data-id="3b46f9c" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-87523b2"
+											data-id="87523b2" data-element_type="column">
+											<div class="elementor-column-wrap elementor-element-populated">
+												<div class="elementor-widget-wrap">
+													<div class="elementor-element elementor-element-99ea0a3 elementor-widget elementor-widget-heading"
+														data-id="99ea0a3" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default"
+																style="color: #4891ff; font-family: Karla;">Still
+																not convinced?</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-9254951 elementor-widget elementor-widget-text-editor"
+														data-id="9254951" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<h4 style=" font-family: Karla; text-align: center;">
+																	Search for GreyAtom on
+																	Linkedin you will find profiles and posts of people
+																	who
+																	have changed their lives for better with us. If you
+																	think they are staged too, feel free to look us up
+																	on
+																	switchup. I am sure you will be convinced in no time
+																	🙂
+																</h4>
+															</div>
+														</div>
+													</div>
+
+													<div class="elementor-element elementor-element-a9b41a9 center-button elementor-widget__width-auto elementor-widget-tablet__width-auto elementor-widget-mobile__width-auto elementor-widget elementor-widget-html"
+														data-id="a9b41a9" data-element_type="widget"
+														data-widget_type="html.default">
+														<div class="elementor-widget-container">
+															<div class="center-button">
+																<button type="button" class="btn btn-primary"
+																	data-toggle="modal"
+																	data-target="#exampleModalCenter">
+																	Register Here for One Week Free Traning
+																</button>
+															</div>
+
+
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-af1215f elementor-widget elementor-widget-text-editor"
+														data-id="af1215f" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-text-editor elementor-clearfix">
+																<p style="text-align: center;">
+																	<!--<b
+																style=" font-family: Karla;"><span
+																	style="text-decoration: line-through;">₹5999</span>/-
+																₹2999/- Limited time offer!</b>-->
+																</p>
+																<div class="timer"
+																	style="color: #4891ff; text-align: center; font-size: large;">
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-085d7ee"
+											data-id="085d7ee" data-element_type="column">
+											<div class="elementor-column-wrap">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div><!-- END PUSHER -->
+		</div><!-- END MAIN -->
+
+	</div>
+	<div id="footer"></div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" style="overflow: hidden;"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="transition: opacity 0.15s linear 0s;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content"
+				style="position: fixed; top: 250px;display: flex;width: 100%; outline: 0px; padding-right: 15px;overflow: hidden;">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Registration Detail</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- show error pop-uo -->
+					<div id="pop_up" style="padding-left:10px;color:red;"></div>
+					<br>
+					<form id="myForm">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" name="name" class="form-control" id="name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" name="email" id="email">
+						</div>
+						<p id='emailError'></p>
+						<div class="form-group">
+							<label for="num">Whatsapp Phone:</label>
+							<input type="text" class="form-control" id="num" name="whatsapp number">
+						</div>
+						<div class="form-group">
+							<label for="num">Any Quary:</label>
+							<input type="text" class="form-control" id="quary" name="query">
+						</div>
+					</form>
+					<!-- main Button  -->
+					<hr>
+					<button style="float:right" class="btn btn-primary buttonload" id="SubmitBtn"><i id="change_name"
+							class="fa"></i>Submit</button>
+					<p id="alert"></p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("April 15, 2021 18:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function () {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Display the result in the element with id="demo"
+			var y = document.getElementsByClassName("timer");
+			for (let index = 0; index < y.length; index++) {
+				y[index].innerHTML = days + "d " + hours + "h "
+					+ minutes + "m " + seconds + "s ";;
+
+				// If the count down is finished, write some text
+				if (distance < 0) {
+					clearInterval(x);
+					y[index].innerHTML = "EXPIRED";
+				}
+
+			}
+
+
+		}, 1000);
+	</script>
+
+	<script type='text/javascript' src='js/swiper.min.js' id='swiper-js' defer></script>
+
+
+	<script>window.lazyLoadOptions = { elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }; window.addEventListener('LazyLoad::Initialized', function (e) {
+			var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
+				var observer = new MutationObserver(function (mutations) {
+					var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) {
+						for (i = 0; i < mutation.addedNodes.length; i++) {
+							if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { continue }
+							if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { continue }
+							images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1 }
+							if (is_iframe) { iframe_count += 1 }
+						}
+					}); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update() }
+				}); var b = document.getElementsByTagName("body")[0]; var config = { childList: !0, subtree: !0 }; observer.observe(b, config)
+			}
+		}, !1)</script>
+
+	<script>"use strict"; var wprRemoveCPCSS = function wprRemoveCPCSS() { var elem; document.querySelector('link[data-rocket-async="style"][rel="preload"]') ? setTimeout(wprRemoveCPCSS, 200) : (elem = document.getElementById("rocket-critical-css")) && "remove" in elem && elem.remove() }; window.addEventListener ? window.addEventListener("load", wprRemoveCPCSS) : window.attachEvent && window.attachEvent("onload", wprRemoveCPCSS);
+	</script>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion2");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+	<script data-no-minify="1" async src="js/lazyload.min.js"></script>
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- easing js -->
+	<script src="js/jquery.magnific-popup.js"></script>
+
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script type='text/javascript' src='js/swiper.min.js' id='swiper-js' defer></script>
+
+	<script type="text/javascript">
+		$('#videoLink')
+			.magnificPopup({
+				type: 'inline',
+				midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+			});
+
+		$(document).ready(function () {
+			$("#input").hide();
+			var accessValue;
+
+			$('#SubmitBtn').click(function (e) {
+				document.getElementById("change_name").className = "fa fa-refresh fa-spin"
+
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var num = document.getElementById('num').value;
+				var query = document.getElementById('quary').value;
+				var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+				var number = /^(\+91-|\+91|0)?\d/;
+
+				if (!name) {
+					document.getElementById('pop_up').innerHTML = "Enter Your Name..";
+				} else {
+					if (reg.test(email) == false) {
+						document.getElementById('pop_up').innerHTML = "Enter Valid Email Address..";
+
+					} else {
+						if (number.test(num) == false) {
+							document.getElementById('pop_up').innerHTML = "Enter phone number";
+
+						} else {
+							document.getElementsByClassName("fa-refresh")
+							$.ajax({
+								url: 'https://api.apispreadsheets.com/data/10241/',
+								type: 'post',
+								data: $("#myForm").serializeArray(),
+								success: function () {
+									document.getElementById("alert").innerHTML = "Wait For Alert!"
+									alert("Form Data Submitted :)")
+									$("#exampleModalCenter").modal("hide");
+								},
+								error: function () {
+									document.getElementById("alert").innerHTML = "Wait For Alert!"
+									alert("There was an error :(")
+									$("#exampleModalCenter").modal("hide");
+								}
+							});
+
+
+						}
+					}
+				};
+
+
+			});
+		});
+	</script>
+
+
+
+
+	<noscript>
+		<link rel="stylesheet" href="css/css.css" />
+		<link rel="stylesheet" href="css/d3dcc6b20fe3333eea4be639767fe6cb.css" media="all" data-minify="1" />
+	</noscript>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1616422011 -->
